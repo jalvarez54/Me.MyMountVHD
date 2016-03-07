@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication", "ConsoleApplication\ConsoleApplication.csproj", "{F5E4179D-00E5-4117-9209-B2B07139ED81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsService", "WindowsService\WindowsService.csproj", "{69426DD6-8845-4B15-8C89-F4958B093F98}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Script", "Script", "{24450ABD-109D-4AF5-8351-2A4EAC4633BD}"
+	ProjectSection(SolutionItems) = preProject
+		_VHDDisks\DisMountMyVHDs.cmd = _VHDDisks\DisMountMyVHDs.cmd
+		_VHDDisks\MountMyVHDs.cmd = _VHDDisks\MountMyVHDs.cmd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{BAB0A19A-04E6-4529-B801-763394AD54E0}"
+	ProjectSection(SolutionItems) = preProject
+		_VHDDisks\DisMountMyVHDs.txt = _VHDDisks\DisMountMyVHDs.txt
+		_VHDDisks\MountMyVHDs.txt = _VHDDisks\MountMyVHDs.txt
+		_VHDDisks\MyMountVHDTask.xml = _VHDDisks\MyMountVHDTask.xml
+		ReadMe.md = ReadMe.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5E4179D-00E5-4117-9209-B2B07139ED81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5E4179D-00E5-4117-9209-B2B07139ED81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5E4179D-00E5-4117-9209-B2B07139ED81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5E4179D-00E5-4117-9209-B2B07139ED81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69426DD6-8845-4B15-8C89-F4958B093F98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69426DD6-8845-4B15-8C89-F4958B093F98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69426DD6-8845-4B15-8C89-F4958B093F98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69426DD6-8845-4B15-8C89-F4958B093F98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
