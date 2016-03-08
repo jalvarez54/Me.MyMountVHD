@@ -31,12 +31,25 @@ namespace WindowsFormsApplication
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-            vhdFileList = vhdFiles.Split(',');
-            vhdLibrary = new VHDLibrary();
-
+            Initialization();
         }
 
         private void buttonAttach_Click(object sender, EventArgs e)
+        {
+            Attach();
+        }
+
+        private void buttonDetach_Click(object sender, EventArgs e)
+        {
+            Detach();
+        }
+
+        public void Initialization()
+        {
+            vhdFileList = vhdFiles.Split(',');
+            vhdLibrary = new VHDLibrary();
+        }
+        public void Attach()
         {
             foreach (var item in vhdFileList)
             {
@@ -59,7 +72,7 @@ namespace WindowsFormsApplication
             }
         }
 
-        private void buttonDetach_Click(object sender, EventArgs e)
+        public void Detach()
         {
             foreach (var item in vhdFileList)
             {
@@ -90,7 +103,16 @@ namespace WindowsFormsApplication
             StackFrame stackFrame = stackTrace.GetFrame(1);
             MethodBase methodBase = stackFrame.GetMethod();
 
-            textBoxMessage.Text += string.Format("{0}: {1} ==> {2}\r\n", DateTime.Now, methodBase, message);
+            string messageToShow = string.Format("{0}: {1} ==> {2}\r\n", DateTime.Now, methodBase, message);
+
+            if (!Program.IsConsole)
+            {
+                textBoxMessage.Text += messageToShow;
+            }
+            else
+            {
+                Console.WriteLine(messageToShow);
+            }
         }
     }
 }

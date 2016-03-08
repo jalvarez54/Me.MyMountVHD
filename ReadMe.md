@@ -18,4 +18,4 @@ Script and console solutions, can be launched at startup with Windows task sched
 
 ## By WindowsForms Application
 
-    WindowsFormsApplication project using Win32 API.
+    WindowsFormsApplication project using Win32 API. Can be run in console mode with -attach -detach options.
