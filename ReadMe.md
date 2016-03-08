@@ -1,4 +1,4 @@
-# Three ways to mount VHD
+# Four ways to mount VHD
 
 All projects use _diskpart_ Microsoft command line to mount/dismount VHD drives, and the files DisMountMyVHDs.txt and MountMyVHDs.txt.
 Script and console solutions, can be launched at startup with Windows task scheduler (MyMountVHDTask.xml)
@@ -15,3 +15,7 @@ Script and console solutions, can be launched at startup with Windows task sched
 ## By Windows service
 
     WindowsService project
+
+## By WindowsForms Application
+
+    WindowsFormsApplication project
