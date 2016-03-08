@@ -53,7 +53,7 @@ namespace WindowsFormsApplication
         {
             foreach (var item in vhdFileList)
             {
-                FileInfo vhdFile = new FileInfo(string.Format(@"{0}\{1}.vhd", vhdFolder, item));
+                FileInfo vhdFile = new FileInfo(string.Format(@"{0}\{1}", vhdFolder, item));
                 if (vhdFile.Exists)
                 {
                     try
@@ -76,7 +76,7 @@ namespace WindowsFormsApplication
         {
             foreach (var item in vhdFileList)
             {
-                FileInfo vhdFile = new FileInfo(string.Format(@"{0}\{1}.vhd", vhdFolder, item));
+                FileInfo vhdFile = new FileInfo(string.Format(@"{0}\{1}", vhdFolder, item));
                 if (vhdFile.Exists)
                 {
                     try

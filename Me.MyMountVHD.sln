@@ -19,6 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution 
 		_VHDDisks\MountMyVHDs.txt = _VHDDisks\MountMyVHDs.txt
 		_VHDDisks\MyMountVHDTask.xml = _VHDDisks\MyMountVHDTask.xml
 		ReadMe.md = ReadMe.md
+		WindowsFormsApplication\bin\Debug\WindowsFormsApplication.exe = WindowsFormsApplication\bin\Debug\WindowsFormsApplication.exe
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication", "WindowsFormsApplication\WindowsFormsApplication.csproj", "{EB995EE0-1384-464D-BC3A-25E362327F11}"
